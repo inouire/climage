@@ -17,34 +17,34 @@
 
 def getValue2(c,a):
 	"""Return threshold value from color + alpha"""
-	couleur =c
+	color =c
 	if(a<=5):
-		couleur=255
+		color=255
 
-	if couleur < 50:
+	if color < 50:
 		return 0
-	elif couleur < 115:
+	elif color < 115:
 		return 1
-	elif couleur < 155:
+	elif color < 155:
 		return 2
-	elif couleur < 195:
+	elif color < 195:
 		return 3
-	elif couleur < 235:
+	elif color < 235:
 		return 4
 	else:
 		return 5
 
-def getValue1(couleur):
+def getValue1(color):
 	"""Return threshold value from color"""
-	if couleur < 50:
+	if color < 50:
 		return 0
-	elif couleur < 115:
+	elif color < 115:
 		return 1
-	elif couleur < 155:
+	elif color < 155:
 		return 2
-	elif couleur < 195:
+	elif color < 195:
 		return 3
-	elif couleur < 235:
+	elif color < 235:
 		return 4
 	else:
 		return 5
