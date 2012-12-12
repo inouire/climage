@@ -120,7 +120,7 @@ def createClimage(pic,w,h):
 	
 	
 if len(sys.argv)<3:
-	print "Some arguments are missing. Guess who they are."
+	print "Some arguments are missing. Expected: pic per line, terminal width"
 	exit(1)
 	
 #get number of pic per line
@@ -150,7 +150,7 @@ for pic in files_list:
 if len(climage_list)!=0:
 	print ">"
 else:
-	print "Climage can't display anything in this folder."
+	print "climage can't display anything in this folder."
 	sys.exit(1)
 	
 #create a sub-tupples list
