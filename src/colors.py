@@ -58,13 +58,5 @@ def getCode3(r,g,b):
 	return 16+(36*getValue1(r)+6*getValue1(g)+getValue1(b))
 
 def missingLibMessage():
-	print "PIL (Python Imaging Libray) not found.\nInstall it on your system and launch climage again."
-	print "    +------------------------------------------------+"
-	print "    | Fedora        | yum install python-imaging     |"
-	print "    | Debian        | apt-get install python-imaging |"
-	print "    | Ubuntu        | apt-get install python-imaging |"
-	print "    | Archlinux     | yaourt -S python24-pil         |"
-	print "    | Mandriva      | urpmi python-imaging           |"
-	print "    | OpenSuse      | smart install python-imaging   |"
-	print "    +------------------------------------------------+"
+	print "python-imaging libray not found.\nInstall it on your system and launch climage again."
 	return
