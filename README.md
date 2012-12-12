@@ -4,6 +4,8 @@ climage (eyes for your shell)
 climage is a small python program that allows you to display pictures with 256 colors, in a shell.
 You can choose to display a single picture or the whole content of a folder.
 
+![climage example](http://codingteam.net/project/climage/upload/screenshots/pic.png "An example of a climage")
+
 ## Requirements
 
 climage needs:
@@ -18,12 +20,12 @@ climage needs:
 ```
 where [arg] can be [image file] or [folder] or [id]
 
-[image file] is the absolute or relative path to a png/jpg/tiff/bmp... file (see Python Imaging documentation to know all supported formats)
-[folder] is the absolute or relative path to a folder
-[id] is the number diplayed next to each picture's name when using climage on a folder.
-Using an id is a fast and easy way to focus on a peculiar picture. 
+* [image file] is the absolute or relative path to a png/jpg/tiff/bmp... file (see Python Imaging documentation to know all supported formats)
 
-Files which are not recognized as pictures will be ignored. 
+* [folder] is the absolute or relative path to a folder. Files which are not recognized as pictures will be ignored. 
+
+* [id] is the number diplayed next to each picture's name when using climage on a folder. Using an id is a fast and easy way to focus on a peculiar picture. 
+
 
 ## Clean setup
 
