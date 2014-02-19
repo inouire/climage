@@ -54,7 +54,7 @@ script_path=$(cd -P $(dirname $0); pwd)
 if [ $# -eq 0 ]; then
     folder=$(pwd)
     echo "$folder" > /tmp/climage_mem_path
-    $_python $script_path/src/ls-climage.py $pic_per_line $columns
+    $_python $script_path/climage/ls-climage.py $pic_per_line $columns
     exit $?
 fi
 
@@ -68,16 +68,16 @@ if [ $# -eq 1 ]; then
         #memorize folder for next execution
         folder=$(pwd)
         echo "$folder" > /tmp/climage_mem_path
-        $_python $script_path/src/ls-climage.py $pic_per_line $columns
+        $_python $script_path/climage/ls-climage.py $pic_per_line $columns
         exit $?
     elif [ -f "$1" ]; then #"cat" on one picture from its path
-        $_python $script_path/src/cat-climage.py "$1" $columns
+        $_python $script_path/climage/cat-climage.py "$1" $columns
         exit $?
     else #"cat" on one single picture from its id
         if [ -e "/tmp/climage_mem_path" ]; then
             folder=$(cat /tmp/climage_mem_path)
             cd "$folder"
-            $_python $script_path/src/id-climage.py $1 $columns
+            $_python $script_path/climage/id-climage.py $1 $columns
             exit $?
         fi
         if [ $? -eq 2 ]; then
